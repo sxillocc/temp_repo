@@ -1,0 +1,5 @@
+package com.fundexception;
+
+public class FundException extends Exception {
+	
+}

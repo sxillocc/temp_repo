@@ -1,0 +1,101 @@
+package com.collections;
+
+class Test{
+	int x, y;
+}
+
+class SimpleClass implements Cloneable{
+	//Deep Cloning
+	
+	int a, b;
+	
+	public SimpleClass(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+
+	public SimpleClass clone() throws CloneNotSupportedException {
+		
+		//Deep Cloning simple example
+		SimpleClass clonedObject = (SimpleClass) super.clone();		
+		return clonedObject;
+		
+	}
+}
+
+class Test3 implements Cloneable{
+	int a;
+	int b;
+	Test c = new Test();
+	
+	public Test3 clone() throws CloneNotSupportedException{
+		Test3 t =  (Test3) super.clone();
+		
+		t.c = new Test();
+		t.c.x = c.x;
+		t.c.y = c.y;
+		
+		return t;
+	}
+}
+
+class Test2 implements Cloneable{
+	int a;
+	int b;
+	Test c = new Test();
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}
+}
+
+public class CloneExample {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		Test2 t1 = new Test2();
+		t1.a = 10;
+		t1.b = 20;
+		t1.c.x = 30;
+		t1.c.y = 40;
+		
+		//clone method will return an instance of class Object
+		//clone method is the method of t1 instance
+		//typecaste that instance to Test2
+		Test2 t2 = (Test2)t1.clone();
+		t2.c.x = 100;
+		t2.c.y = 200;
+		
+		System.out.println(t1.a + " "+t1.b+" "+t1.c.x+" "+t1.c.y);
+		System.out.println(t2.a + " "+t2.b+" "+t2.c.x+" "+t2.c.y);
+		
+		Test3 t4 = new Test3();
+		t4.a = 10;
+		t4.b = 20;
+		t4.c.x = 30;
+		t4.c.y = 40;
+		
+		Test3 t3 = t4.clone();
+		t3.a = 400;
+		t3.b = 500;
+		t3.c.x = 600;
+		t3.c.y = 700;
+		
+		System.out.println(t4.a + " "+t4.b+" "+t4.c.x+" "+t4.c.y);
+		System.out.println(t3.a + " "+t3.b+" "+t3.c.x+" "+t3.c.y);
+		
+		
+		SimpleClass x = new SimpleClass(-5, -10);
+		SimpleClass y = (SimpleClass) x.clone();
+		
+		System.out.println(x.a+" "+x.b);
+		System.out.println(y.a+" "+y.b);
+		
+		y.a = 50;
+		y.b = 60;
+		
+		System.out.println(x.a+" "+x.b);
+		System.out.println(y.a+" "+y.b);
+	}
+
+}
+

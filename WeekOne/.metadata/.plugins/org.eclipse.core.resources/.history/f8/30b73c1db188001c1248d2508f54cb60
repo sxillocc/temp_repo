@@ -1,0 +1,29 @@
+package com.fundexception;
+
+public class Main {
+	int balance;
+	
+	public Main(int balance) {
+		this.balance = balance;
+	}
+	
+	public void deposit(int amount) {
+		if (amount > 0) {
+			this.balance += amount;
+		}
+		System.out.println("Balance: "+this.balance);
+	}
+	
+	public void withdraw(int amount) {
+		if(amount <= balance) {
+			balance = balance-amount;
+		}
+		System.out.println("Balance: "+this.balance);
+	}
+	
+	public static void main(String[] args) {
+		Main x = new Main(20);
+		x.deposit(10);
+		x.withdraw(20);
+	}
+}

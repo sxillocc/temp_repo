@@ -1,0 +1,19 @@
+package com.collections;
+
+import java.util.LinkedHashSet;
+
+public class CollectionExample {
+	public static void main(String[] args) {
+		LinkedHashSet<String> h = new LinkedHashSet<String>();
+		
+		if(h.isEmpty())
+				System.out.println("Is Empty");
+		h.add("First");
+		h.add("Second");
+		h.add("Third");
+		System.out.println(h);
+		for(int i=0; i<h.size();i++) {
+			System.out.println("Element("+i+"): "+h);
+		}
+	}
+}

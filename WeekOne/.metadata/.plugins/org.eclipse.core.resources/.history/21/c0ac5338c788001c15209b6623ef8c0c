@@ -1,0 +1,5 @@
+package mythreads;
+
+public class ThreadByRunnable {
+
+}

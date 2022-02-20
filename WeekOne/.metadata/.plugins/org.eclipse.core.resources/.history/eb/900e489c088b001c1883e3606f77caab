@@ -1,0 +1,19 @@
+package com.collections;
+
+import java.util.Iterator;
+import java.util.PriorityQueue;
+
+public class PriorityQueueExample {
+	public static void main(String[] args) {
+		
+		PriorityQueue<String> p = new PriorityQueue<String>();
+		p.add("First");
+		p.add("2nd");
+		p.add("Third");
+		
+		Iterator<String> it = p.iterator<String>();
+		while(it.hasNext()) {
+			
+		}
+	}
+}

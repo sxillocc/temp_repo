@@ -1,0 +1,43 @@
+package com.deadlockdemo;
+
+public class Solution {
+	public static void main(String[] args) {
+		Resource1 r1 = new Resource1();
+		Resource2 r2 = new Resource2();
+		
+		Runnable t1 = new Runnable() {
+			@Override
+			public void run() {
+				synchronized(r1){
+					try {
+						synchronized(r2) {
+							try {
+								System.out.println("Got all requirements");
+							}catch(Exception e) {}
+						}
+					}catch(Exception e) {}
+				}
+			}
+			
+		};
+		
+		Runnable t2 = new Runnable() {
+			@Override
+			public void run() {
+				synchronized(r2){
+					try {
+						synchronized(r1) {
+							try {
+								System.out.println("Got all requirements");
+							}catch(Exception e) {}
+						}			
+					}catch(Exception e) {}
+				}
+			}			
+		};
+		
+		new Thread(t1).start();
+		new Thread(t2).start();
+		
+	}
+}

@@ -1,0 +1,11 @@
+ExectutionPool
+
+Callable vs Runnable
+both are same, one can return value
+one have call function and one have run()
+
+Deadlock
+
+
+Collection
+We'll see- list, map & set

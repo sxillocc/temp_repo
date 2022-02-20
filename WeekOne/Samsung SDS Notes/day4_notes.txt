@@ -1,0 +1,49 @@
+Global Development Center - DC in India, Vietnaam, and China
+and India is largest one 
+
+
+Workstrength (Off-role, On-role) - 1500
+
+Mr. Dipanjana Shah - Vice President
+groups within team
+further there are parts in group
+
+1) GDC is a team in which there are 5 groups
+
+QA - Quality group - Nalin Kumar
+Implement - Amit Pavah
+Overseas group - Dharmendra Verma
+E-Store - E-Commerce group Gaurav Thadani
+Solution  - Mohmmd Abid
+
+2) Parts
+A) Solution groups consist of 3 parts- BSC, CX, Devops
+BSC - Competency - Mohmd. Abid (Talent building)
+CX - Mr. Sushil Kumar Singh (Takes care of UI/ Customer Experience)
+Devops - Govind Srivastava
+
+B) Overseas - Dharmendra Sharma
+HQ - Headquarter - Korea Office
+Prominent part from where we get business
+Europe, US, Middle East, Apache excluding Korea
+1) America Part - Ravindra Kumar
+2) Europe Part - Mr. Kishu
+3) Asia Pacific Part - Mr. Mukul Pahvah
+
+C) Implentation Group - 
+1) Internal Part - Ms. Anjuman Chawla
+2) 
+
+D) QA Group
+Verification/Testing Areas (It's not part)
+1) Functional
+2) Performance
+3) Security
+4) OSS - Open Source Softwares (Checks whether particular OSS is sage to use)
+5) Quality Management Division/Part (Quality Management / Final before delivery)
+
+2 weeks Java
+Training for internal SW test
+2 Weeks training on mock SW test
+
+2 hrs class then practise regrous

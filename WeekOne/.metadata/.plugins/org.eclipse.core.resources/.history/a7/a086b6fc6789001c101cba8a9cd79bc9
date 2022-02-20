@@ -1,0 +1,9 @@
+package mythreads;
+
+public class PrintSomething {
+	public void printer(int i, String name) {
+		for(int k=0; k<i; k++) {
+			System.out.println("k= "+k+": name= "+name);
+		}
+	}
+}

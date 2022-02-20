@@ -1,0 +1,16 @@
+package com.learning;
+
+public class AccessSpecifiers {
+	public static void main(String[] args) {
+		System.out.println();
+		/*
+		 * who can see me?
+		 * private -> within class
+		 * default -> within class, within package
+		 * protected -> within class, within package, outside package & by subclass
+		 * public -> within class, within package, outside package & by subclass, outside package
+		 * 
+		 * */
+	}
+
+}

@@ -1,0 +1,20 @@
+finalize() method
+System.gc is the explicit way to call garbage collector
+To acknowledge us after changes we can override finalize method
+
+Atomic Package
+AtomicInteger, AtomicBoolean-
+
+int, bool and other primitive data type not works properly when being shared by multiple threads, sometimes if multiple threads do add operation together without any difference in moment of execution, then there will be single update instead of twice update.
+Atomic Package data type help us to update particular variable under lock, in a synchronized manner
+
+ArrayList
+
+Syntax-
+ArrayList<String> x = new ArrayList<>();
+x.add(some_string);//add given string in list
+x.add(some_string2);
+x.remove(1);//remove string at index 1
+
+x.size()// return the size of arraylist
+

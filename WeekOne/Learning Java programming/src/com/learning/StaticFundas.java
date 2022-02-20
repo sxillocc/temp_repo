@@ -1,0 +1,29 @@
+package com.learning;
+
+public class StaticFundas {
+	int count=0;
+	static int count2 = 0;
+	
+	public StaticFundas() {
+		count++;
+		count2++;
+	}
+	
+	public void print() {
+		System.out.println("This is print method");
+	}
+	
+	
+	public static void main(String[] args) {
+		StaticFundas x1 = new StaticFundas();
+		StaticFundas x2 = new StaticFundas();
+		StaticFundas x3 = new StaticFundas();
+		
+		System.out.println(x1.count);
+		System.out.println(x2.count);
+		System.out.println(x3.count);
+		System.out.println(x1.count2 == x2.count2 ? (x1.count2 == x3.count2 ? "All Equal" : "Unequal") : "Unequal");
+		
+		new StaticFundas().print();
+	}
+}

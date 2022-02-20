@@ -1,0 +1,19 @@
+package com.functioninterface;
+
+interface Operator{
+	
+	int operation(int x, int y);
+}
+
+public class LambdaFunctionExample {
+	public static void main(String args[]) {
+		
+		Operator sum = (int x, int y) -> { return x+y;};
+		Operator multiply = (int x, int y) -> { return x*y; };
+		Operator divide = (x,y)->x/y;
+		
+		System.out.println(sum.operation(5, 10));
+		System.out.println(multiply.operation(5, 10));
+		System.out.println(divide.operation(5, 5));
+	}
+}

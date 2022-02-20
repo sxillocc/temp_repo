@@ -1,0 +1,10 @@
+package mythreads;
+
+class Main {
+	public static void main(String[] args) {
+		ThreadByRunnable t1 = new ThreadByRunnable("Madhav");
+		t1.start();
+		ThreadByRunnable t2 = new ThreadByRunnable("Rasavihari");
+		t2.start();
+	}
+}

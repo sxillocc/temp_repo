@@ -1,0 +1,9 @@
+package com.functioninterface;
+
+public class Main {
+	public static void main(String args[]) {
+		//Functional Interface Example
+		//Lambda Function Example
+		
+	}
+}

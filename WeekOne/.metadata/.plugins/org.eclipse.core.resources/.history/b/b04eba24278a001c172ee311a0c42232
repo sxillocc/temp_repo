@@ -1,0 +1,26 @@
+package com.myexception;
+
+public class Main {
+	 
+    static int validateAge(int age) throws MyException{
+    	
+        try {
+        	if(age<18) {
+                throw new MyException("Your age is not valid to vote");
+            }else {
+                System.out.println("welcome to vote");
+            }
+        }catch(Exception e){}finally {return 2;}
+//        return 3;
+    }
+    public static void main(String[] args) {
+        
+    	try {
+    		validateAge(17);
+    		
+    	} catch(Exception e) {
+    		System.out.println(e);
+    	}
+    }
+ 
+}

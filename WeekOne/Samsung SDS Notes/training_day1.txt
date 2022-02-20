@@ -1,0 +1,81 @@
+Features of Java - 
+
+A) Simple
+B) Objected Oriented
+C) Portable
+D) Platform Independent
+E) Secured
+
+Basic need to make java program and run-
+1) jdk(java development kit)-
+function: compile & run 
+it consist of jre
+2) jre(java runtime environment)-
+it consist of jvm & jars
+In client side whenever no need to compile code, we can install jre
+3)jvm
+function: run class
+
+other more bonafide source- https://www.geeksforgeeks.org/differences-jdk-jre-jvm/
+----
+Brief explanation of public static void main(String[] args)
+
+Program:
+class sayHello {
+    public static void main(String[] args)
+    {
+        System.out.println("Hello!");
+    }
+}
+1) It is made public so that JVM can invoke it from outside the class as it is not present in the current class
+2) main() method is static so that JVM can invoke it without instantiating the class
+3) This also saves the unnecessary wastage of memory which would have been used by the object declared only for calling the main() method by the JVM
+4) As soon as the main() method terminates, the java program terminates too. Hence, it doesn’t make any sense to return from main() method.
+5) It is the identifier that the JVM looks for as the starting point of the java program. It’s not a keyword.
+6) It stores Java command line arguments and is an array of type java.lang.String class
+
+Compilation:
+1) We can store our sayHello.java in java_sdk_path/bin to avoid setting environment variable.
+2) Write below command "javac sayHello.java" later "java sayHello.class".
+----
+
+Robust
+Architecture neutral : Minimum hardware requirement
+High Performance: put xyz.class on any machine, fast respone
+Multi-threading: 
+Ex- 1) 1000 line of code. Execution line by line.
+    2) 10 piece of independent code each of 10 line. Fast Execution.
+Distributed: later
+Dynamic: Dynamic by nature
+
+----
+Inheritence: 
+
+extends (1 class)
+implements (1 or more then 1 interface)
+
+upcasting - some_child = new parent(); //manual (explicit)
+downcasting - some_parent = new child(); //natural
+Child child = (Child) new Parent();
+----
+
+Static
+The static keyword is a non-access modifier in Java that is applicable for the following: 
+Blocks
+Variables
+Methods
+Classes
+following is a good source- https://www.geeksforgeeks.org/static-keyword-java/
+
+final
+variable - will become constant
+method - will not be override later
+class - will not be inherited
+
+this
+refer current class instance variable
+
+super
+used as instance to call method and variable of parent class
+super() used to call constructor of parent class
+

@@ -1,0 +1,46 @@
+Error - Developer not able to handle
+Exception - Developer able to handle
+	1) Compile time - 
+	2) Run time -
+
+try
+catch
+finally - always occur despite of having exception, helpful to free memory and other important task
+throw - used to throw exception (Syntax: throw Instance; Ex- throw new ArthmaticException();
+throws - used to tell that follwing method may throw exception
+
+Exception Propagation - Propagation
+
+Life Cycle of a thread :
+                    start()                    run()              sleep(),wait()/end of execution
+new thread-->New------------------->Runnable------------->Running-------------------------------->waiting/Dead
+
+Thread is a light weight subprocess
+Multithreading is the process of doing several task simultaneously which are independent task
+life cycle of thread
+two ways to create thread 
+	Extend thread class
+	Implements Runnalble
+how to call run() method from start()
+how to perform multiple tasks by multiple thread
+thread schedular
+sleeping a thread
+joining a thread
+naming a thread
+priority of a thread: more priority first execution, range 1 to 10, 1 low Priority and 10 high, default priority is 5
+daemon thread
+shutdown hook
+garbage collection
+synchronization (method, block, static)
+	controlling access of shared resources among threads
+
+deadlock
+interthread communication
+thread pool executor
+
+Assignments
+Overiding question
+Custom exception withdraw and deposit
+Create Multithread using runnable
+
+
